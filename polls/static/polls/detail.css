@@ -1,0 +1,26 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47.7rem;
+    /*border: 2px solid red;*/
+}
+
+.card{
+    width: 45%;
+}
+
+.form-check-input{
+    margin-top: 2.6%;
+}
+
+.card-text{
+    padding: 2% 1%;
+}
+
+.btn{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
