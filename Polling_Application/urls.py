@@ -13,10 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import Polling_Application.views as views
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.redirect_to_polls, name='redirect_to_polls'),
     path('polls/', include(('polls.urls', 'polls'), namespace='polls')),
 ]
